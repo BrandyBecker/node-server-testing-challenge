@@ -1,0 +1,61 @@
+
+exports.seed = function(knex) {
+  // Deletes ALL existing entries
+  return knex('breeds').del()
+    .then(function () {
+      // Inserts seed entries
+      return knex('breeds').insert([
+        { name: 'Maine Coon'},
+        { name: 'Ragdoll'},
+        { name: 'Persian Cat'},
+        { name: 'Siamese Cat'},
+        { name: 'British Shorthair'},
+        { name: 'Sphynx Cat'},
+        { name: 'Abyssinian Cat'},
+        { name: 'American Shorthair'},
+        { name: 'Bengal Cat'},
+        { name: 'Exotic Shorthair'},
+        { name: 'Burmese Cat'},
+        { name: 'Birman'},
+        { name: 'Siberian Cat'},
+        { name: 'Scottish Fold'},
+        { name: 'Japanese Bobtail'},
+        { name: 'Norwgian Forest Cat'},
+        { name: 'Russian Blue'},
+        { name: 'Himalayan Cat'},
+        { name: 'Devon Rex'},
+        { name: 'Bombay Cat'},
+        { name: 'Manx Cat'},
+        { name: 'Cornish Rex'},
+        { name: 'Turkish Angora'},
+        { name: 'American Curl'},
+        { name: 'American Bobtail'},
+        { name: 'Oriental Shorthair'},
+        { name: 'Balinese Cat'},
+        { name: 'Ocicat'},
+        { name: 'Ragamuffin Cat'},
+        { name: 'Tonkinese Cat'},
+        { name: 'Chartreux'},
+        { name: 'Turkish Van'},
+        { name: 'Egyptian Mau'},
+        { name: 'Brazilian Shorthair'},
+        { name: 'Somali Cat'},
+        { name: 'Savannah Cat'},
+        { name: 'Korat'},
+        { name: 'Singapura Cat'},
+        { name: 'LaPerm'},
+        { name: 'American Wirehair'},
+        { name: 'Munchkin Cat'},
+        { name: 'Havana Brown'},
+        { name: 'Selkirk Rex'},
+        { name: 'Burmilla'},
+        { name: 'Colorpoint Shorthair'},
+        { name: 'Oriental Longhair'},
+        { name: 'Snowshoe Cat'},
+        { name: 'Pixie-Bob'},
+        { name: 'Malayan Cat'},
+        { name: 'Peterbald'},
+        { name: 'Chausie'}
+      ]);
+    });
+};
