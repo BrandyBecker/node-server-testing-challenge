@@ -26,10 +26,6 @@ async function update(id, changes) {
     return null;
   }
   
-  function remove(id) {
-    return null;
-  }
-  
   function getAll() {
     return db("breeds");
   }
@@ -38,3 +34,8 @@ async function update(id, changes) {
     return null;
   }
   
+  function remove(id) {
+    return db('breeds')
+      .where('id', id)
+      .del();
+   }
